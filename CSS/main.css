@@ -1,0 +1,127 @@
+/* Inicialiar estilos */
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 1.6rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Utilidades */
+.m-0 {
+    margin: 0;
+}
+
+.contenedor {
+    width: 98%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* ============== HEADER ============== */
+/* Header del sitio */
+.site-header {
+    background-image: url(../IMG/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 60rem;
+}
+
+/* Barra de navegación */
+.barra {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.barra a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.barra a h1 {
+    font-weight: 300;
+}
+
+.barra a h1 span {
+    font-weight: 700;
+}
+
+.navegacion ul {
+    margin: 0;
+    padding: .7rem 0;
+    list-style: none;
+}
+
+.navegacion ul li {
+    padding: .7rem 0;
+}
+
+@media (min-width: 768px) {
+    .navegacion ul {
+        display: flex;
+    }
+
+    .navegacion ul li {
+        margin-right: 4rem;
+    }
+    
+    .navegacion ul li:last-child {
+        margin-right: 0;
+    }
+}
+
+.navegacion ul li a {
+    transition: all .3s;
+}
+
+.navegacion ul li a:hover {
+    color: rgb(177, 118, 84);
+}
+
+/* Texto header */
+.texto-header {
+    color: #fff;
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.texto-header h2 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.texto-header p {
+    font-weight: 300;
+    margin-top: 1rem;
+}
+
+@media (min-width: 768px) {
+    .texto-header {
+        margin-top: 20rem;
+    }
+
+    .site-header p {
+        margin-top: 4rem;
+    }
+}
