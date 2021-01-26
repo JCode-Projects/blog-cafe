@@ -29,6 +29,44 @@ img {
     margin: 0 auto;
 }
 
+.boton {
+    display: block;
+    padding: 1.5rem 5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+    }
+}
+
+.boton-primario {
+    background-color: rgb(26, 25, 25);
+    transition: .3s;
+}
+
+.boton-primario:hover {
+    background-color: rgba(26, 25, 25, 0.932);
+}
+
+.boton-secundario {
+    background-color: rgb(126, 82, 53);
+}
+
+.boton-secundario:hover {
+    background-color: rgb(126, 82, 53, 0.932);
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
 /* ============== HEADER ============== */
 /* Header del sitio */
 .site-header {
@@ -124,4 +162,96 @@ img {
     .site-header p {
         margin-top: 4rem;
     }
+}
+
+/* ============== CONTENIDO PRINCIPAL ============== */
+/* Contenedor principal */
+.contenido-principal {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        justify-content: space-between;
+    }
+}
+
+.blog {
+    flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+    .blog {
+        flex-basis: 60%;
+    }
+}
+
+.blog h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.entrada-blog {
+    margin-top: 5rem;
+}
+
+.contenido-entrada h3 {
+    margin: 1rem 0;
+}
+
+.contenido-entrada p {
+    font-size: 1.8rem;
+    margin: 0 0 1rem 0;
+    text-align: justify;
+}
+
+.lista-cursos {
+    flex-basis: 100%;
+    order: -1;
+}
+
+@media (min-width: 768px) {
+    .lista-cursos {
+        flex-basis: calc(40% - 2rem);
+        order: 1;
+    }
+}
+
+.lista-cursos h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.lista-cursos ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.curso {
+    margin-bottom: 4rem;
+}
+
+.curso h3 {
+    font-size: 2.2rem;
+}
+
+.curso p {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.curso p span {
+    font-weight: 300;
+}
+
+/* ============== FOOTER ============== */
+.site-footer {
+    background-color: rgb(26, 25, 25);
+    margin-top: 5rem;
+    padding: 1rem 0;
 }
