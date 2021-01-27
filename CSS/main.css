@@ -16,11 +16,20 @@ body {
 
 img {
     max-width: 100%;
+    width: 100%;
 }
 
 /* Utilidades */
 .m-0 {
     margin: 0;
+}
+
+.t-a-c {
+    text-align: center;
+}
+
+.f-z-3 {
+    font-size: 3rem;
 }
 
 .contenedor {
@@ -254,4 +263,130 @@ img {
     background-color: rgb(26, 25, 25);
     margin-top: 5rem;
     padding: 1rem 0;
+}
+
+/* ============================================ */
+/* ============== PAGINAS INTERNAS ============== */
+/* ============================================ */
+
+/* Nosotros */
+@media (min-width: 768px) {
+    .contenedor-nosotros {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .imagen {
+        flex-basis: calc(50% - 1rem);
+    }
+
+    .texto-nosotros {
+        flex-basis: calc(50% - 1rem);
+    }
+}
+
+/* Cursos */
+.descripcion {
+    font-weight: 400 !important;
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .curso-u p {
+        margin: 4rem 0;
+    }
+
+    .curso-u {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+    }
+
+    .curso-u .imagen {
+        flex-basis: calc(30% - 1rem);
+    }
+
+    .contenido-curso {
+        flex-basis: calc(70% - 1rem);
+    }
+}
+
+/* Contacto */  
+.contenedor-formulario {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contenedor-formulario .imagen {
+    flex: 0 0 100%;
+}
+
+
+.formulario {
+    flex: 1;
+    margin-top: 2rem;
+    background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .formulario {
+        flex: 0 0 80%;
+        margin: -20rem auto 0 auto;
+        padding: 2rem;
+        border: .1rem solid #000;
+    }
+}
+
+.submit > input {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .submit {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .submit > input {
+        width: auto;
+    }
+}
+
+.campo {
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    display: block;
+    font-size: 1.8rem;
+    margin: .5rem 0;
+}
+
+.campo input, 
+.campo textarea {
+    width: 100%;
+    padding: 1rem;
+    outline: none;
+}
+
+.campo textarea {
+    height: 20rem;
+}
+
+@media (min-width: 768px) {
+    .campo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .campo label {
+        margin-top: 1rem;
+    }
+
+    .campo input, .campo textarea {
+        margin-left: 1rem;
+        flex: 1;
+    }
 }
